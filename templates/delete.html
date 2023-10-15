@@ -45,7 +45,17 @@
       width: 100%;
       opacity: 0.9;
     }
-
+    #tasarimkodlama-button {
+      display: inline-block;
+      padding: 5px 10px;
+      text-align: center;
+      text-decoration: none;
+      color: #ffffff;
+      border-radius: 6px;
+      outline: none;
+      width: auto;
+      margin-right: 10px; /* Düğmeler arasındaki boşluğu ayarlayabilirsiniz */
+    }
     .warning {
       color: red;
     }
@@ -79,7 +89,7 @@
       <h2 class="sectionnote"> {{ result_html }} </h1>
     {% endif %}
   </form>
-
+  <button id="tasarimkodlama-button" onclick="window.location.href = '/';">Search Page</button>
   <p class="footnote"><i>This app is developed in Python by <b>{{ developer_name }}</b> and deployed with Flask on AWS Cloud using Clouldformation Service.</i></p>
 </body>
 
